@@ -40,13 +40,12 @@
 
     <!--Content-->
     <p class="titleofpage">Welcome</p>
-    <script src="../js/main.js"></script> 
     <hr> 
     <div class="employee-form">
         <form onsubmit="event.preventDefault();onFormSubmit();"> 
             <div>
                 <label>Full Name*</label>
-                <label class="validation-error hide" id="fullNameValidationError">This field is required. (6-26 characters long)</label> 
+                <label class="validation-error hide" id="fullNameValidationError">This field is required. (10-26 characters long)</label> 
                 <input type="text" name="fullName" id="fullName"> 
             </div> 
             <div> 
@@ -56,12 +55,12 @@
             </div> 
             <div> 
                 <label>Salary*</label>
-                <label class="validation-error hide" id="salaryValidationError">This field is required. (1-5 characters long)</label>  
+                <label class="validation-error hide" id="salaryValidationError">This field is required. (10-50 characters long)</label>  
                 <input type="text" name="salary" id="salary"> 
             </div> 
             <div> 
                 <label>City*</label>
-                <label class="validation-error hide" id="cityValidationError">This field is required. (4-80 characters long)</label> 
+                <label class="validation-error hide" id="cityValidationError">This field is required. (10-80 characters long)</label> 
                 <input type="text" name="city" id="city"> 
             </div> 
             <div  class="form-action-buttons"> 
@@ -102,6 +101,7 @@
     </footer>
     <!--Footer_END-->
 
+    <script src="../js/main.js"></script> 
 </body>
 
 </html>
