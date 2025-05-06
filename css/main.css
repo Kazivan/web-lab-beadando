@@ -1,7 +1,98 @@
-#kozep{
-    
-    
-    margin-left: 10%;
-    margin-right: 10%;
-
+body {
+    background-color: brown;
 }
+h1{
+    font-size: 25 px;
+    text-align: center;
+}
+/*HorizontalMenu*/
+.HoMenu {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.HoMenuList {
+    display: inline;
+}
+.HoMenuLink {
+    float: left;
+    padding: 3px 5px;
+    margin: 0px 4px;
+    text-decoration: none;
+    color:white;
+    background-color: darkred;
+}
+.HoMenuLink:hover{
+    background-color: red;
+    color: black;
+}
+.activepage {
+    background-color: brown;
+    color: goldenrod;
+}
+.activepage:hover {
+    background-color: brown;
+    color: goldenrod;
+}
+/*HorizontalMenuEND*/
+
+/*Footer*/
+footer {
+    bottom: 10px;
+}
+#creditsstart {
+    color: lightgray;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+}
+#creditstable {
+    border: 4px;
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+}
+.creditstablehead {
+    border: 2px;
+    border-color:black;
+    border-style: solid;
+    background-color: darkred;
+    color: lightgray;
+    padding: 5px;
+}
+.creditstablebody {
+    border: 2px;
+    border-color:black;
+    border-style: solid;
+    background-color: red;
+    padding: 2px;
+}
+.creditscenter {
+    text-align: center;
+}
+.creditsleft {
+    text-align: left;
+}
+/*FooterEND*/
+
+/*TitleofPage*/
+.titleofpage {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: red;
+}
+/*.user-card
+{
+background-color:green;
+width: 180 px;
+height: 180 px;
+display: inline-table;
+}
+.user-card.active
+{
+background-color: salmon
+}*/
+/*TitleofPageEND*/
