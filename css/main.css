@@ -84,6 +84,28 @@ footer {
     font-weight: bolder;
     color: red;
 }
+.Eleft{
+    margin: 2%;
+    float: left;
+    width: 20%;
+}
+.Eright{
+    
+    margin: 2%;
+    float: right;
+    width: 20%;
+}
+.Emiddle{
+    float: middle;
+    width: 40%;
+    margin-bottom: 40px;
+}
+.Ecolor{
+    display: table;
+    color: lightgray;
+    font-size: 20px;
+    background-color: darkred;
+}
 /*.user-card
 {
 background-color:green;
