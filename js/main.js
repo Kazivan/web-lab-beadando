@@ -262,7 +262,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("searchC4").value = "";
         filterTable();
     }
-
+    // pénzváltó
     var bemenet = document.getElementById("bemenet");
     var ebbol = document.getElementById("ebbol");
     var ebbe = document.getElementById("ebbe");
