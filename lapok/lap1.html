@@ -40,8 +40,24 @@
 
     <!--Content-->
     <p class="titleofpage">Welcome</p>
-
-    
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <div id="valto">
+    <input id="bemenet" onkeyup="valtsal();"></input>
+    <div id="eredmeny"></div><br>
+    <select id="ebbol" onchange="valtsal();">
+      <option value="dollar">Dollárból</option>
+      <option value="euro">Euróból</option>
+      <option value="font">Fontból</option>
+      <option value="forint">Forintból</option>
+    </select>
+    <select id="ebbe" onchange="valtsal();">
+      <option value="dollar">Dollárba</option>
+      <option value="euro">Euróba</option>
+      <option value="font">Fontba</option>
+      <option value="forint">Forintba</option>
+    </select>
+    </div>
+    <script src="../js/main.js"></script> 
    
    
     <footer>

@@ -83,6 +83,7 @@ function validate() {
     var test_ln = 0;
     var test_e = 0;
     var test_s = 0;
+    
     var test_c = 0;
     if (document.getElementById("fullName").value == "" || document.getElementById("fullName").value.length < 10 || document.getElementById("fullName").value.length > 26) { 
         test_ln = 0; 
@@ -110,6 +111,8 @@ function validate() {
         if (!document.getElementById("salaryValidationError").classList.contains("hide")) 
             document.getElementById("salaryValidationError").classList.add("hide"); 
     } 
+    
+   
 
     if (document.getElementById("city").value == "" || document.getElementById("city").value.length < 10 || document.getElementById("city").value.length > 80) { 
         test_c = 0; 
@@ -258,4 +261,70 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("searchC3").value = "";
         document.getElementById("searchC4").value = "";
         filterTable();
+    }
+
+    var bemenet = document.getElementById("bemenet");
+    var ebbol = document.getElementById("ebbol");
+    var ebbe = document.getElementById("ebbe");
+    var valts = document.getElementById("valts");
+    var eredmeny = document.getElementById("eredmeny");
+    var torzs = document.getElementById("torzs");
+    
+    var dollarSzin = "#88FF88";
+    var euroSzin = "#8888FF";
+    var forintSzin = "#FF8888";
+    var fontSzin = "#123456";
+    
+    function valtsal () {
+      var ertek = bemenet.value;
+      var ebbolvalts = ebbol.value;
+      var ebbevalts = ebbe.value;
+      if (ebbolvalts === "euro") {
+        torzs.style.backgroundColor = euroSzin;
+        if (ebbevalts === "dollar") {
+          eredmeny.innerHTML = "= " + ertek * 1.12645 + " $";
+        }
+        if (ebbevalts === "forint") {
+          eredmeny.innerHTML = "= " + ertek * 311.432126 + " Ft";
+        }
+        if (ebbevalts === "font") {
+          eredmeny.innerHTML = "= " + ertek * 0.735232687 + " £";
+        }
+      }
+      if (ebbolvalts === "dollar") {
+        torzs.style.backgroundColor = dollarSzin;
+        if (ebbevalts === "euro") {
+          eredmeny.innerHTML = "= " + ertek * 0.887744685 + " €";
+        }
+        if (ebbevalts === "forint") {
+          eredmeny.innerHTML = "= " + ertek * 276.472215 + " Ft";
+        }
+        if (ebbevalts === "font") {
+          eredmeny.innerHTML = "= " + ertek * 0.65269891 + " £";
+        }
+      }
+      if (ebbolvalts === "forint") {
+        torzs.style.backgroundColor = forintSzin;
+        if (ebbevalts === "dollar") {
+          eredmeny.innerHTML = "= " + ertek * 0.003617 + " $";
+        }
+        if (ebbevalts === "euro") {
+          eredmeny.innerHTML = "= " + ertek * 0.00321097252 + " €";
+        }
+        if (ebbevalts === "font") {
+          eredmeny.innerHTML = "= " + ertek * 0.00236081196 + " £";
+        }
+      }
+      if (ebbolvalts === "font") {
+        torzs.style.backgroundColor = fontSzin;
+        if (ebbevalts === "forint") {
+          eredmeny.innerHTML = "= " + ertek * 423.58308 + " Ft";
+        }
+        if (ebbevalts === "dollar") {
+          eredmeny.innerHTML = "= " + ertek * 1.5321 + " $";
+        }
+        if (ebbevalts === "euro") {
+          eredmeny.innerHTML = "= " + ertek * 1.36011363 + " €";
+        }
+      }
     }
